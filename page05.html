@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <style>
+        body{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="page.html">Home</a></li>
+            <li><a href="page02.html">Sobre mim</a></li>
+            <li><a href="page03.html">Portifólio</a></li>
+            <li><a href="page04.html">Objetivos</a></li>
+            <li><a href="page05.html">Contato</a></li>
+        </ul>
+    </header>
+    <br>=
+    <div class="contactDiv" id="contact">
+        <div class="leftContact">
+            <div>
+                <h2>Contato</h2>
+                <p>Aqui você pode me mandar uma mensagem.</p>
+            </div>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+            </div>
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea type="text" id="mensagem"></textarea>
+            </div>
+            <button onclick="conferirMensagemWhatsApp()">Conferir dados</button>
+        </div>
+        <div class="rightContact">
+            <div>
+                <p>Nome: <span id="confNome"></span></p>
+                <p>Mensagem: <span id="confMsg"></span></p>
+            </div>
+            <button onclick="enviar()">ZAP</button>
+        </div>
+        
+    </div>
+</body>
+</html>
